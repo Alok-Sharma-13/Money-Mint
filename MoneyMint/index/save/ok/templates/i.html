@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Chatbot</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9; /* Light background color */
+            padding: 20px;
+            color: #333; /* Dark text color */
+        }
+
+        /* Chat Container */
+        .chat-container {
+            width: 100%;
+            max-width: 500px; /* Max width for the chat box */
+            background-color: #ffffff; /* White background for the chat box */
+            padding: 2rem; /* Inner padding */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+            text-align: center; /* Center text */
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+
+        /* Hover effect for the chat box */
+        .chat-container:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+        }
+
+        /* Heading */
+        .chat-container h2 {
+            font-size: 2rem; /* Larger font for the heading */
+            color: #3f51b5; /* Primary color */
+            margin-bottom: 1rem; /* Space below heading */
+        }
+
+        /* Input Field */
+        input[type="text"] {
+            width: 100%; /* Full width */
+            padding: 0.8rem; /* Padding */
+            margin-bottom: 1rem; /* Margin below */
+            border: 1px solid #ccc; /* Border styling */
+            border-radius: 5px; /* Rounded corners */
+            outline: none; /* Remove outline */
+            font-size: 1rem; /* Font size */
+        }
+
+        /* Button Styling */
+        button {
+            padding: 0.8rem 1.5rem; /* Padding for button */
+            font-size: 1rem; /* Font size */
+            background-color: #5cb85c; /* Button color */
+            color: white; /* Text color */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor */
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Animation */
+            margin-top: 1rem; /* Space above */
+        }
+
+        /* Hover effect for the button */
+        button:hover {
+            background-color: #4cae4c; /* Darker green on hover */
+            transform: translateY(-3px); /* Lift effect */
+        }
+
+        /* Response Styling */
+        .response {
+            background-color: #f0f0f0; /* Light gray background */
+            padding: 10px; /* Inner padding */
+            border-radius: 5px; /* Rounded corners */
+            margin-top: 10px; /* Margin above */
+            text-align: left; /* Align text to the left */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .chat-container {
+                padding: 1.5rem; /* Reduced padding on smaller screens */
+            }
+
+            .chat-container h2 {
+                font-size: 1.5rem; /* Smaller heading on smaller screens */
+            }
+
+            input[type="text"],
+            button {
+                font-size: 0.9rem; /* Smaller font size */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <h2>Carbon Footprint & Website Info Chatbot</h2>
+        <form method="POST" action="/chat">
+            <input type="text" name="user_input" placeholder="Ask about carbon footprint or this website" required>
+            <button type="submit">Ask</button>
+        </form>
+
+        {% if user_input %}
+        <div>
+            <strong>You:</strong> {{ user_input }}
+        </div>
+        <div class="response">
+            <strong>Bot:</strong> {{ bot_response }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

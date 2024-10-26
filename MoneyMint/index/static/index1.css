@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: z#4f6f8b;
+}
+.logo{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 20%;
+    height: auto;
+
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#logout {
+    display: inline-block; /* Makes the anchor tag behave like a block element */
+    padding: 10px 20px;   /* Padding for button size */
+    margin: 10px;         /* Margin around the button */
+    background-color: #007bff; /* Button color */
+    color: white;         /* Text color */
+    text-decoration: none; /* Removes underline from the link */
+    border: none;         /* No border */
+    border-radius: 5px;   /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#logout:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+main {
+    text-align: center;
+}
+
+
+.intro-text {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #333;
+    max-width: 80%;
+    font-weight: 900;
+    padding-top: 450px;
+}
+
+#start-btn {
+    padding: 15px 30px;
+    background-color: #32cd32;
+    color: #fff;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+#start-btn:hover {
+    background-color: #28a745;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.option-box {
+    display: inline-block; /* Makes the anchor tag behave like a block element */
+    padding: 20px;        /* Adds padding around the text */
+    margin: 10px;         /* Adds margin between the boxes */
+    background-color: #f0f0f0; /* Background color */
+    border: 1px solid #ccc; /* Border styling */
+    text-decoration: none; /* Removes underline from links */
+    color: #333;          /* Text color */
+    border-radius: 5px;   /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.option-box:hover {
+    background-color: #ddd; /* Change background color on hover */
+}
+
+.guide {
+    max-width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
+    text-align: left;
+}
+
+.guide{
+    margin-top: 50px;
+    
+}
+
+.guide h1 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+   
+}
+
+.guide p {
+    font-size: 1em;
+    margin-bottom: 10px;
+   
+}
+
+.guide ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+
+}
+
+.guide li {
+    font-size: 1em;
+    line-height: 2.6;
+   
+    
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; 
+    color: white; 
+    position: relative; 
+    width: 100%;
+    bottom: 0; 
+}
+
+footer p {
+    margin: 0; 
+    font-size: 14px; 
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Create an Account</h2>
+        <form method="POST" action="{{ url_for('register') }}">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" required>
+
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gmail">Email</label>
+            <input type="email" id="gmail" name="gmail" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="btn">Register</button>
+            <p>Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
+        </form>
+    </div>
+</body>
+</html>

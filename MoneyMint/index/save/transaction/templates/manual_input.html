@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Input</title>
+    <link rel="stylesheet" href="../static/manual.css"> <!-- Update with your CSS file -->
+</head>
+<body>
+    <div class="manual-input-container">
+        <h2>Enter Values Manually</h2>
+        <form method="POST">
+            <label for="electricity">Electricity (₹):</label>
+            <input type="text" name="electricity" required><br><br>
+
+            <label for="transportation">Transportation (₹):</label>
+            <input type="text" name="transportation" required><br><br>
+
+            <label for="groceries">Groceries (₹):</label>
+            <input type="text" name="groceries" required><br><br>
+
+            <button type="submit">Calculate</button>
+        </form>
+        <a href="/" class="ocr-button">OCR</a> <!-- OCR button added -->
+    </div>
+</body>
+</html>

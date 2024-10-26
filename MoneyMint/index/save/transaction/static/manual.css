@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9; /* Light background */
+    padding: 20px; /* Space around content */
+    color: #333; /* Dark text */
+}
+
+/* Container Styling */
+.manual-input-container {
+    width: 100%;
+    max-width: 400px; /* Limit width for larger screens */
+    background-color: #ffffff; /* White background for the container */
+    padding: 2rem; /* Inner padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    text-align: center; /* Center text within container */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for container */
+.manual-input-container:hover {
+    transform: translateY(-5px); /* Lift effect */
+}
+
+/* Heading */
+.manual-input-container h2 {
+    font-size: 1.8rem; /* Heading size */
+    color: #3f51b5; /* Primary color */
+    margin-bottom: 1.5rem; /* Space below heading */
+}
+
+/* Input Fields */
+input[type="text"] {
+    width: 100%; /* Full width input */
+    padding: 0.8rem; /* Padding inside input */
+    font-size: 1rem; /* Font size */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    outline: none; /* Remove outline */
+    margin-bottom: 1.5rem; /* Space below input */
+}
+
+/* Button Styling */
+button {
+    width: 100%; /* Full width button */
+    padding: 0.8rem; /* Padding inside button */
+    font-size: 1rem; /* Font size */
+    background-color: #3f51b5; /* Primary button color */
+    color: #ffffff; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    margin-top: 1rem; /* Space above button */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #2c3b91; /* Darker shade on hover */
+    transform: translateY(-3px); /* Lift effect */
+}
+
+/* OCR Button Styling */
+.ocr-button {
+    display: inline-block; /* Make it behave like a button */
+    width: 100%; /* Full width button */
+    padding: 0.8rem; /* Padding inside */
+    font-size: 1rem; /* Font size */
+    background-color: #4caf50; /* Green background */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 1rem; /* Space above */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animation */
+}
+
+/* Hover effect for OCR button */
+.ocr-button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+    transform: translateY(-3px); /* Lift effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .manual-input-container {
+        padding: 1.5rem; /* Reduced padding on smaller screens */
+    }
+
+    .manual-input-container h2 {
+        font-size: 1.6rem; /* Smaller heading on smaller screens */
+    }
+
+    input[type="text"],
+    button {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+}

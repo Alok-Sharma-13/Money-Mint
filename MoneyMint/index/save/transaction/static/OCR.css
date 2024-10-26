@@ -1,0 +1,121 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    padding: 20px;
+    color: #333;
+}
+
+/* Container Styling */
+.upload-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.upload-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Heading */
+.upload-container h1 {
+    font-size: 1.8rem;
+    color: #3f51b5;
+    margin-bottom: 1.5rem;
+}
+
+/* Messages */
+.upload-container ul {
+    list-style-type: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.upload-container ul li {
+    margin: 0.5rem 0;
+}
+
+/* Input Field */
+input[type="file"] {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 1.5rem;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: #3f51b5;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #2c3b91;
+    transform: translateY(-3px);
+}
+
+/* Button Styling */
+/* Manual Input Button Styling */
+.manual-input-button {
+    display: inline-block; /* To behave like a button */
+    width: 100%; /* Full width for consistency */
+    padding: 0.8rem; /* Padding */
+    font-size: 1rem; /* Font size */
+    background-color: #2196F3; /* Blue background */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 1rem; /* Space above */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animation */
+}
+
+.manual-input-button:hover {
+    background-color: #1976D2; /* Darker blue on hover */
+    transform: translateY(-3px); /* Lift effect */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .upload-container {
+        padding: 1.5rem;
+    }
+
+    .upload-container h1 {
+        font-size: 1.6rem;
+    }
+
+    input[type="file"],
+    button {
+        font-size: 0.9rem;
+    }
+}
